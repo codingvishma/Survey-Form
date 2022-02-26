@@ -1,0 +1,118 @@
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<meta name="description"
+		content="A webpage of a survey form where i illustrated responsive web design using different forms of input">
+	<meta name="author" content="Vishma Ambelal Rama">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="description text-center">
+      <em>Please kindly fill in this 2 minute survey form.</em>
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-area">
+  <label for "name" id="name-label">Name: </label><br>    
+<input type="text" id="name" name="name"  class="form-control" placeholder="Enter Full Name" required><br>
+  
+   <label for "email" id="email-label">Email: </label><br> 
+<input type="email" id="email" name="email" class="form-control" placeholder="Enter Email Address" required><br>
+  
+    <label for "age" id="number-label">Age: </label><br>
+  <input type="number" id="number" name="age"  min="8" max="60" class="form-control" placeholder="Age"><br>
+        
+    </div>
+ 
+    <div class="form-area">
+      <p><u>Which option best describes your current role?</u></p>
+      <select id="dropdown" name="role" class="form-control" required>
+<option disabled selected value>Select current role</option>
+ <option value="student">Student</option>
+ <option value="job">Full Time Job</option>
+ <option value="learner">Full Time Learner</option>
+ <option value="preferNo">Prefer not to say</option>
+ <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-area">
+      <p><u>Would you recommend freeCodeCamp to a friend?</u></p>
+        
+  <input type="radio" id="radio-value" name="inputradio" value="definitely">
+  <label for="input1"> Definitely</label><br>
+        
+  <input type="radio" id="radio-value" name="inputradio" name="maybe" value="maybe">
+  <label for="input1"> Maybe</label><br>    
+  <input type="radio" id="radio-value" name="inputradio" value="not-sure">
+  <label for="input1"> Not sure</label><br>
+    </div>
+
+    <div class="form-area">
+      <p><u>What is your favorite feature of freeCodeCamp?</u></p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">Open Source</option>
+      </select>
+    </div>
+
+    <div class="form-area">
+      <p><u>What would you like to see improved?</u><p>
+        <span class="clue">(Tick all that apply)</span>
+      </p>
+
+  <input 
+  type="checkbox" id="checkbox-value" name="input1" value="front-end-projects">
+  <label for="Front-end"> Front-end Projects</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input2" value="Back-end-projects">
+  <label for="input2"> Back-end Projects</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input3" value="data-visualization">
+  <label for="input3"> Data Visualization</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input4" value="challenges">
+  <label for="input4"> Challenges</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input5" value="open-source-community">
+  <label for="input5"> Open Source Community</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input6" value="gitter-help-room">
+  <label for="input6"> Gitter help room</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input7" value="videos">
+  <label for="input7"> Videos</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input8" value="city-meetups">
+  <label for="input8"> City Meetups</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input9" value="wiki">
+  <label for="input9"> Wiki</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input10" value="forum">
+  <label for="input10"> Forum</label><br>
+  
+  <input type="checkbox" id="checkbox-value" name="input11" value="additional-courses">
+  <label for="input11"> Additional Courses</label><br>
+    </div>
+
+    <div class="form-area">
+      <p><strong>Any comments or suggestions?</strong></p>
+      <textarea
+        name="comment" id="comments" class="input-text" placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-area">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
